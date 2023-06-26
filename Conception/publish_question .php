@@ -21,7 +21,7 @@
         <label>password</label>
         <input type="text" name ="password">
         
-        <button type="submit" href="../index.php" name="validate"> s'inscrire</button>
+        <button type="submit" href="../index.php" name="validate"> Publier la question</button>
     </form>
 </body>
 </html>
