@@ -1,5 +1,6 @@
 <?php  
 require ('actions/database.php');
+
 if(isset($_POST['validate'])){
 if(!empty($_POST['pseudo']) AND !empty($_POST['nom']) AND !empty($_POST['prenom']) AND !empty($_POST['mdp'])){
 
@@ -29,7 +30,8 @@ if(!empty($_POST['pseudo']) AND !empty($_POST['nom']) AND !empty($_POST['prenom'
         $_SESSION['pseudo'] = $usersInfos['pseudo'];
 
 
-
+        header('location: index.php');
+        
     }else{
         $errorMsg = "l'utilisateur existe deja sur le site";
         }
