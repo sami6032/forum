@@ -10,6 +10,14 @@
     justify-content: center;
     margin-top: 100px;
 }
- /* .btn{ 
-    width: 100px !important;
-}  */
+/* .bienvenus{
+margin-top: -100px ;
+} */
+.nav-link:hover {
+background-color: #0200C3;
+border-radius: 10px;
+}
+.btn:hover {
+    background-color: #0200C3;
+    border-radius: 50px;
+    }
