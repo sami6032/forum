@@ -1,5 +1,5 @@
 <?php
-require ('actions/questions/editQuestionAction.php');
+require ('actions/questions/getInfosOfEditedQuestionAction.php');
 require ('actions/users/securityAction.php');
 
 ?>
@@ -9,7 +9,7 @@ require ('actions/users/securityAction.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Poser question</title>
     //head
     <?php include '' ?> 
 </head>
@@ -22,11 +22,30 @@ require ('actions/users/securityAction.php');
 
     <?php 
     if (isset($question_date)){
-    }?>
+   ?>
 
-    //Formulaire publish-questions.php
+<form method="POST">
+    
+    <div>
+        <label for=title class=form-label>Titre de la question</label>
+        <input type="text" class=form-label name ="title" value=" <?=$question_title?>">
+    </div>
+    <div>
+    <label for=description class=form-label>Description de la question</label>
+        <input type="text" name ="description" class=form-label name ="title" value=" <?=$question_title?>">
+    </div>
+
+    <div>
+        
+        <label for=question>Contenu de la question</label>
+        <textarea type="text" name="question" id="" cols="30" rows="10"></textarea>
+    </div>
+
+        <button type="submit" href="" name="validate"> Publier la question</button>
+    </form>
 
     <?php 
+     }
     ?>
 </body>
 </html>

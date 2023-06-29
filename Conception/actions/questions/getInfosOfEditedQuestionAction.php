@@ -11,7 +11,7 @@ $questionInfos = $checkIfQuestionExists->fetch();
 if($questionInfos ['id_auteur']== $_SESSION['id']){
     $question_title = $questionInfos ['titre'];
     $question_description = $questionInfos ['description'];
-    $question_content = $questionInfos ['content'];
+    $question_content = $questionInfos ['contenu'];
     $question_date = $questionInfos ['date_publication'];
     
 }else{
