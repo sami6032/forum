@@ -18,7 +18,7 @@
     <?php 
     if(isset($_errorMsg)){
         echo '<p>'.$_errorMsg.'<p>';
-      }elseif(isset($successMsg)){
+      }elseif(isset($_successMsg)){
         echo '<p>'.$_successMsg.'<p>';
       }
 

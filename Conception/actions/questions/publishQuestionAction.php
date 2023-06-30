@@ -24,9 +24,9 @@ if(isset($_POST['validate'])){
         )
      );
 
-     $successMsg = "votre question a bien été publié sur le site";
+     $_successMsg = "Votre question a bien été publié sur le site";
      
   }else{
-         $errorMsg = "veuillez compléter tous les champs...";
+         $_errorMsg = "Veuillez compléter tous les champs...";
 }
 ?>
