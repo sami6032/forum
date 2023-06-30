@@ -95,7 +95,7 @@
     <a class="nav-link active" aria-current="page" href="actions/logoutAction.php">
                 <div>
                   <button class="btn btn-secondary " type="button"style="background-color: white;color: red"; >
-                    <strong>Deconnexion</strong>
+                    <strong>Déconnexion</strong>
                   </button>
                 </div>
               </a>
