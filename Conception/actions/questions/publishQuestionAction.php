@@ -8,27 +8,25 @@ if(isset($_POST['validate'])){
       $question_description = nl2br(htmlspecialchars($_POST['description']));
       $question_contenu = nl2br(htmlspecialchars($_POST['content']));
       $question_date = date('d/m/y');
-      $question_id_auteur = $_SESSION['id'];
+      $question_id_auteur = $_SESSION['Id'];
       $question_pseudo_auteur = $_SESSION['pseudo'];
       
-      $insertQuestionOnwebsite = $bdb->prepare('INSERT INTO questions(titre, description, contenu, id_auteur, pseudo_auteur, date_publication)VALUES(?, ?, ?, ?, ?, ?)');
+      $insertQuestionOnwebsite = $bdd->prepare('INSERT INTO questions(titre, description, contenu, id_auteur, pseudo_auteur, date_publication)VALUES(?, ?, ?, ?, ?, ?)');
       $insertQuestionOnwebsite->execute(
         array(
             $question_title,
             $question_description,
-            $question_contenu,  
+            $question_contenu,
             $question_id_auteur, 
-            $question_pseudo_auteur, 
-            $question_date
+            $question_pseudo_auteur,
+            $question_date 
+            
         )
      );
 
-     $successMsg = "votre question a bien été publié sur le site";
+     $_successMsg = "Votre question a bien été publié sur le site";
      
   }else{
-         $errorMsg = "veuillez compléter tous les champs...";
+         $_errorMsg = "Veuillez compléter tous les champs...";
 }
-
-
-
 ?>
