@@ -15,7 +15,7 @@ if($questionInfos ['id_auteur']== $_SESSION['id']){
     $question_date = $questionInfos ['date_publication'];
     
 }else{
-    $errormsg="vous n'êtes pas l'auteur de cette question !"
+    $errormsg="vous n'êtes pas l'auteur de cette question !" 
 }
     }else{
         $errormsg='Question pas encore existante'
